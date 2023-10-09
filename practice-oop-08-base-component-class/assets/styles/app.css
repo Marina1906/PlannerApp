@@ -4,10 +4,26 @@
 
 html {
   font-family: sans-serif;
+  color: #870099;
 }
 
 body {
   margin: 0;
+  background-image: linear-gradient(
+    to bottom,
+    #ea3b9e,
+    #de65c4,
+    #ce86e0,
+    #bfa1f3,
+    #b6b9fd,
+    #abc8ff,
+    #a7d5ff,
+    #ade0ff,
+    #a6e8ff,
+    #a2f0ff,
+    #a2f8fe,
+    #a6fff9
+  );
 }
 
 #main-header {
@@ -16,11 +32,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ff0062;
+  border-radius: 3rem;
+  background-image: linear-gradient(
+    to bottom,
+    #ea3b9e,
+    #de65c4,
+    #ce86e0,
+    #bfa1f3,
+    #b6b9fd,
+    #abc8ff,
+    #a7d5ff,
+    #ade0ff,
+    #a6e8ff,
+    #a2f0ff,
+    #a2f8fe,
+    #a6fff9
+  );
+
 }
 
 #main-header h1 {
-  color: white;
+  color: rgb(217, 68, 234);
   margin: 0;
 }
 
@@ -52,6 +84,7 @@ section ul {
   padding: 1rem;
   max-height: 20rem;
   overflow: scroll;
+  scrollbar-color: purple;
 }
 
 section > h2 {
@@ -61,16 +94,18 @@ section > h2 {
 
 button {
   font: inherit;
-  background: #ff0062;
+  background: #fb4ff2;
   color: white;
-  border: 1px solid #ff0062;
+  border: 1px solid #f457f4;
+  border-radius: 1rem;
   padding: 0.5rem 1.5rem;
   cursor: pointer;
 }
 
 button.alt {
   background: white;
-  color: #ff0062;
+  color: #e313ea;
+  border-radius: 1rem;
 }
 
 button:focus {
@@ -79,8 +114,8 @@ button:focus {
 
 button:hover,
 button:active {
-  background: #ff2579;
-  border-color: #ff2579;
+  background: #f147cc;
+  border-color:  rgb(217, 68, 234);
   color: white;
 }
 
@@ -88,11 +123,12 @@ button:active {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   padding: 1rem;
-  background: white;
+  background: rgb(250, 243, 243);
 }
 
 #active-projects {
-  border: 1px solid #870099;
+  border: 1px solid  #870099;
+
 }
 
 #active-projects > header {
@@ -101,6 +137,7 @@ button:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 #active-projects header h2 {
@@ -109,11 +146,11 @@ button:active {
 }
 
 #finished-projects {
-  border: 1px solid #535353;
+  border: 1px solid #870099;
 }
 
 #finished-projects > header {
-  background: #535353;
+  background: #0bd2e8;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -121,6 +158,6 @@ button:active {
 }
 
 #finished-projects header h2 {
-  color: white;
+  color: rgb(217, 68, 234);
   margin: 0;
 }
